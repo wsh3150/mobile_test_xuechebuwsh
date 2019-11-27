@@ -39,4 +39,4 @@ class LoginPage(BasePage):
 
     def get_login_btn_attr(self, attr_name):
         """获取登录按钮属性值"""
-        self.get_attribute_func(self.login_btn, attr_name)
+        return self.get_attribute_func(self.login_btn, attr_name)

@@ -21,8 +21,8 @@ class TestLogin(object):
         """退出驱动对象"""
         self.driver.quit()
 
-    @pytest.mark.parametrize('name,pwd,expect,is_success', [('15535853634', 'zxc727397', '6547', True),
-                                                            ('13100001111', '123456', '账号还未注册', False)])
+    @pytest.mark.parametrize('name,pwd,expect,is_success',
+                             [('15535853634', 'zxc727397', '6547', True), ('', '123456', 'false', False)])
     def test_login(self, name, pwd, expect, is_success):
         """登录测试方法"""
         if is_success:
@@ -38,10 +38,20 @@ class TestLogin(object):
             assert expect in nick_name  # 断言判断结果
         else:
             # 反向测试
+            # self.page_factory.home_page.click_mine()  # 点击我的
+            # self.page_factory.mine_page.click_login()  # 点击登录/注册
+            # self.page_factory.login_page.input_username(name)  # 输入账号
+            # self.page_factory.login_page.input_password(pwd)  # 输入密码
+            # self.page_factory.login_page.click_login_btn()  # 点击登录按钮
+            # message = self.page_factory.login_page.get_toast()
+            # assert expect in message
+
             self.page_factory.home_page.click_mine()  # 点击我的
             self.page_factory.mine_page.click_login()  # 点击登录/注册
             self.page_factory.login_page.input_username(name)  # 输入账号
             self.page_factory.login_page.input_password(pwd)  # 输入密码
             self.page_factory.login_page.click_login_btn()  # 点击登录按钮
-            message = self.page_factory.login_page.get_toast()
-            assert expect in message
+
+            result = self.page_factory.login_page.get_login_btn_attr('clickable')  # 获取登录按钮属性值
+            print('获取的属性值为', result)
+            assert expect == result  # 断言判断结果
