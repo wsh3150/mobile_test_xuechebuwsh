@@ -2,18 +2,9 @@
 驱动对象获取方法
 """
 # 1. 导包
-from time import sleep
 from appium import webdriver
 
 
-# 3. 声明启动参数
-# capabilities = {
-#     "platformName": "Android",  # 平台类型(iOS 和 Android)
-#     "platformVersion": "5.1",  # 手机系统版本
-#     "deviceName": "模拟器",  # 设备名称
-#     "appPackage": "com.android.settings",  # 待测应用的包名
-#     "appActivity": ".Settings"  # 待测应用的启动名
-# }
 def init_driver():
     # 3. 声明启动参数
     capabilities = dict()  # 声明空字典
