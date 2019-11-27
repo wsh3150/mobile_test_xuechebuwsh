@@ -1,8 +1,13 @@
 """
 我的页面
 """
+import page
 from base.base_page import BasePage
 
 
 class MinePage(BasePage):
-    pass
+    login = page.login
+
+    def click_login(self):
+        """点击登录/注册"""
+        self.click_func(self.login)
