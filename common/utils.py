@@ -3,6 +3,7 @@
 """
 # 1. 导包
 from appium import webdriver
+from selenium.webdriver.support.wait import WebDriverWait
 
 
 def init_driver():
@@ -15,6 +16,7 @@ def init_driver():
     capabilities['appActivity'] = ".MainActivity"  # 待测应用的启动名
     capabilities['resetKeyboard'] = True
     capabilities['unicodeKeyboard'] = True
+    capabilities['automationName'] = 'Uiautomator2'   # 获取toast信息
 
     # 学车不 包名/启动名
     # com.bjcsxq.chat.carfriend/.MainActivity
@@ -23,6 +25,8 @@ def init_driver():
     driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_capabilities=capabilities)
 
     return driver
+
+
 
 
 if __name__ == '__main__':

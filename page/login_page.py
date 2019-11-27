@@ -11,6 +11,7 @@ class LoginPage(BasePage):
     login_btn = page.login_btn
     con_btn = page.con_btn
     nick_name = page.nick_name
+    toast = page.toast
 
     def input_username(self, name):
         """输入用户名"""
@@ -25,9 +26,17 @@ class LoginPage(BasePage):
         self.click_func(self.login_btn)
 
     def click_con_btn(self):
-        """点击签到提示框确认按钮"""
+        """点击签到提示框确定按钮"""
         self.click_func(self.con_btn)
 
     def get_nick_name(self):
         """获取昵称"""
         return self.get_text_func(self.nick_name)
+
+    def get_toast(self):
+        """获取 toast 信息"""
+        return self.get_toast_message(self.toast)
+
+    def get_login_btn_attr(self, attr_name):
+        """获取登录按钮属性值"""
+        self.get_attribute_func(self.login_btn, attr_name)
