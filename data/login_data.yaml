@@ -1,25 +1,25 @@
-login001:
-  name: '15535853634'
-  pwd: zxc727397
-  expect: '6547'
+login_info1:
+  name: '13488780982'
+  pwd: wsh13488780982
+  expect: '8125'
   is_success: True
-#login002:
-#  name: ' 15535853634'
-#  pwd: zxc727397
-#  expect: '6547'
+#login_info2:
+#  name:  '13488780982'
+#  pwd: wsh13488780982
+#  expect: '8125'
 #  is_success: True
-#login003:
-#  name: '15535853634 '
-#  pwd: zxc727397
-#  expect: '6547'
+#login_info3:
+#  name: '13488780982'
+#  pwd: wsh13488780982
+#  expect: '8125'
 #  is_success: True
-login009:
-  name: '15535853634'
-  pwd: ''
+login_info4:
+  name: ''
+  pwd: 123456
   expect: 'false'
   is_success: False
-#login012:
-#  name: ''
-#  pwd: 123456
+#login_info5:
+#  name: 13488780982
+#  pwd: ''
 #  expect: 'false'
 #  is_success: False

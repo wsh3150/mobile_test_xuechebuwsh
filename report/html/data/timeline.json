@@ -1,0 +1,37 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "周淼森的电脑",
+    "children" : [ {
+      "name" : "162916-MainThread",
+      "children" : [ {
+        "name" : "TestLogin.test_login[15535853634--false-False]",
+        "uid" : "2a0ad6bb42121f65",
+        "parentUid" : "5a677f6a0b01c67141f359566e5a732a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1574856530740,
+          "stop" : 1574856561252,
+          "duration" : 30512
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TestLogin.test_login[15535853634-zxc727397-6547-True]",
+        "uid" : "e6b5fa6d087d54c2",
+        "parentUid" : "5a677f6a0b01c67141f359566e5a732a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1574856496750,
+          "stop" : 1574856528914,
+          "duration" : 32164
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5a677f6a0b01c67141f359566e5a732a"
+    } ],
+    "uid" : "fdfbfe2eb0cd2e8d04667b270b095ab3"
+  } ]
+}

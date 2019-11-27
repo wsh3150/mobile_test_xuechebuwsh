@@ -1,0 +1,51 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1574856496750" stop="1574856561252">
+  <description>
+登录测试用例
+</description>
+  <name>test_login</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1574856496750" status="passed" stop="1574856528914">
+      <description>登录测试方法</description>
+      <name>TestLogin.test_login[15535853634-zxc727397-6547-True]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="162916-MainThread"/>
+        <label name="host" value="周淼森的电脑"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1574856520681" status="passed" stop="1574856528913">
+          <name>登陆测试</name>
+          <title>登陆测试</title>
+          <attachments>
+            <attachment source="03c4cbaa-5354-436f-b438-25e7ab700af2-attachment.txt" title="正向用例测试" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1574856530740" status="passed" stop="1574856561252">
+      <description>登录测试方法</description>
+      <name>TestLogin.test_login[15535853634--false-False]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="162916-MainThread"/>
+        <label name="host" value="周淼森的电脑"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1574856552900" status="passed" stop="1574856561251">
+          <name>登陆测试</name>
+          <title>登陆测试</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
