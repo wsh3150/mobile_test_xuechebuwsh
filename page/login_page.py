@@ -8,7 +8,7 @@ from base.base_page import BasePage
 class LoginPage(BasePage):
     username = page.username
     password = page.password
-    login_btn = page.login_page
+    login_btn = page.login_btn
     con_btn = page.con_btn
     nick_name = page.nick_name
 
