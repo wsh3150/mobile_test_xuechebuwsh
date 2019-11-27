@@ -30,5 +30,4 @@ class LoginPage(BasePage):
 
     def get_nick_name(self):
         """获取昵称"""
-        # TODO:需不需要返回值待确认
-        self.get_text_func(self.nick_name)
+        return self.get_text_func(self.nick_name)
